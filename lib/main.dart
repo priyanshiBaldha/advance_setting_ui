@@ -225,8 +225,10 @@ class _MyAppState extends State<MyApp> {
                           ],
                         ),
                         Switch(
-                          value: true,
-                          onChanged: (val) {},
+                          value: Globals.lock,
+                          onChanged: (val) {
+                            Globals.lock = val;
+                          },
                           activeColor: Colors.red,
                         )
                       ],
@@ -260,8 +262,10 @@ class _MyAppState extends State<MyApp> {
                           width: 40,
                         ),
                         Switch(
-                          value: false,
-                          onChanged: (val) {},
+                          value: Globals.finger,
+                          onChanged: (val) {
+                            Globals.finger = val;
+                          },
                           activeColor: Colors.red,
                         )
                       ],
@@ -294,8 +298,10 @@ class _MyAppState extends State<MyApp> {
                           width: 10,
                         ),
                         Switch(
-                          value: true,
-                          onChanged: (val) {},
+                          value: Globals.password,
+                          onChanged: (val) {
+                            Globals.password = val;
+                          },
                           activeColor: Colors.red,
                         )
                       ],
@@ -588,8 +594,10 @@ class _MyAppState extends State<MyApp> {
                             width: 70,
                           ),
                           CupertinoSwitch(
-                            value: true,
-                            onChanged: (val) {},
+                            value: Globals.lock,
+                            onChanged: (val) {
+                              Globals.lock = val;
+                            },
                             activeColor: Colors.red,
                           ),
                         ],
@@ -623,8 +631,10 @@ class _MyAppState extends State<MyApp> {
                             width: 90,
                           ),
                           CupertinoSwitch(
-                            value: false,
-                            onChanged: (val) {},
+                            value: Globals.finger,
+                            onChanged: (val) {
+                              Globals.finger = val;
+                            },
                             activeColor: Colors.red,
                           ),
                         ],
@@ -664,8 +674,10 @@ class _MyAppState extends State<MyApp> {
                             width: 90,
                           ),
                           CupertinoSwitch(
-                            value: true,
-                            onChanged: (val) {},
+                            value: Globals.password,
+                            onChanged: (val) {
+                              Globals.password = val;
+                            },
                             activeColor: Colors.red,
                           ),
                         ],
